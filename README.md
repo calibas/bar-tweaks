@@ -2,9 +2,9 @@
 
 Using this repo to store my [Beyond All Reason](https://www.beyondallreason.info/) tweak defs.
 
-## Encoder
+## Encoder (JavaScript)
 
-I've included a tool that performs Lua minification and base64 encoding. It requires [Node.js](https://nodejs.org/) to be installed.
+I've included a tool that performs Lua minification and base64 encoding, requires [Node.js](https://nodejs.org/).
 
 After cloning the repo, perform initial setup by running:
 ```bash
@@ -16,7 +16,7 @@ Then you can encode Lua files by using:
 node encode.js my-script.lua
 ```
 
-## Encoder (Python-based)
+## Encoder (Python)
 
 This performs base64 encoding only, minification requires the JavaScript encoder:
 ```bash
