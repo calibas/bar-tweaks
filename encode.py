@@ -17,7 +17,7 @@ def base64encode(file_path):
     """
     with open(file_path, "rb") as f:
         data = f.read()
-    encoded = base64.b64encode(data).decode("utf-8")
+    encoded = base64.urlsafe_b64encode(data).decode("utf-8")
     encoded = encoded.replace("=", "")
     return encoded
 

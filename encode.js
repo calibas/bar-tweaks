@@ -46,7 +46,7 @@ function main() {
   const finalLua = firstLineComment + minified;
 
   // Base64-encode the minified code
-  let encoded = Buffer.from(finalLua).toString('base64');
+  let encoded = Buffer.from(finalLua).toString('base64url');
 
   // Remove all "=" characters
   encoded = encoded.replace(/=/g, '');
